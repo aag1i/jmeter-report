@@ -18,7 +18,7 @@
 	</style>
   </head>
   <body>
-	<h1>Here is the header</h1>
+	<h1>My JMeter test header</h1>
 	  <table>
 		<thead>
 			<tr>
