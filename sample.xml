@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample.xsl"?>
+<testResults version="1.2">
+<httpSample t="5" it="0" lt="4" ct="2" ts="1653285947515" s="true" lb="My request 1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:47 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="3" it="0" lt="3" ct="1" ts="1653285948521" s="true" lb="My request 2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:48 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="4" it="0" lt="4" ct="2" ts="1653285949526" s="true" lb="My request 3" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:49 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="3" it="0" lt="3" ct="1" ts="1653285950532" s="true" lb="My request 4" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:50 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="19" it="0" lt="19" ct="1" ts="1653285951536" s="true" lb="My request 5" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:51 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="5" it="0" lt="5" ct="2" ts="1653285952557" s="true" lb="My request 6" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:52 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="4" it="0" lt="3" ct="1" ts="1653285953563" s="true" lb="My request 7" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:53 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="4" it="0" lt="3" ct="1" ts="1653285954568" s="true" lb="My request 8" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:54 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+<httpSample t="4" it="0" lt="4" ct="1" ts="1653285955573" s="true" lb="My request 9" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="339" sby="112" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Mon, 23 May 2022 06:05:55 GMT
+Content-type: text/html
+Content-Length: 153
+Last-Modified: Mon, 23 May 2022 06:05:28 GMT
+</responseHeader>
+  <responseData class="java.lang.String">&lt;html&gt;  &#xd;
+&lt;head&gt;   &#xd;
+&lt;title&gt;Local JMETER load report test &lt;/title&gt;  &#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;  &#xd;
+&lt;h1&gt;Jmeter load test report XSL example&lt;/h1&gt;&#xd;
+&lt;/body&gt;  &#xd;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/</java.net.URL>
+</httpSample>
+
+</testResults>
