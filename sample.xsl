@@ -4,6 +4,7 @@
 <html>
   <head>
 	<title>Title of Automation Test</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
 	<style type="text/css">
 		html{background:#ccc;padding 10px;}
 		body{width:900px;margin:0 auto;background:white;height:80%;text-align:center; padding:10px;}
