@@ -7,7 +7,10 @@ pipeline
 	{
 		choice(name: 'selectedENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
 	}
-	
+	options
+	{
+		timestamps()
+	}
 	stages{
 	
 		stage('Initialising') {
