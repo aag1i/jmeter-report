@@ -5,7 +5,7 @@ pipeline
 	
 	parameters
 	{
-		choice(name: 'Select-ENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
+		choice(name: 'SelectENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
 		string(name: 'My_VAR', defaultValue: 'sample', description: 'Sample Variable')
 	}
 	options
@@ -18,7 +18,7 @@ pipeline
 			steps{
 				echo "###################################"
 				echo "Test automation project starting..."
-				echo "Environment : ${params.Select-ENV}"
+				echo "Environment : ${params.SelectENV}"
 			}			
 		}		
 		stage('GitSCM') {
