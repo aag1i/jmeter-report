@@ -1,15 +1,15 @@
 #!/usr/bin/env groovy
 pipeline
 {
+	agent any
+	
 	parameters
 	{
 		choice(name: 'global.ENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
 	}
 	
 	stages{
-		
-		agent any
-		
+	
 		stage('Initialising') {
 			steps{
 				echo "###################################"
