@@ -6,7 +6,7 @@ pipeline
 	parameters
 	{
 		choice(name: 'Select-ENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
-		string(name: 'My.VAR', defaultValue: 'sample', description: 'Sample Variable')
+		string(name: 'My_VAR', defaultValue: 'sample', description: 'Sample Variable')
 	}
 	options
 	{
@@ -53,13 +53,13 @@ pipeline
 		}
 		stage('Complete') {
 			steps {
-				if (params.My.VAR != 'sample')
+				if (params.My_VAR != 'sample')
 				{
-					echo "### Sample variable changed -> ${params.My.VAR}"
+					echo "### Sample variable changed -> ${params.My_VAR}"
 				}
 				else
 				{
-					echo "### Sample variable has not changed -> ${params.My.VAR}"
+					echo "### Sample variable has not changed -> ${params.My_VAR}"
 				}			
 			}
 		}//Stage
