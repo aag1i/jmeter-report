@@ -16,7 +16,7 @@ pipeline
 	environment
 	{
 		def props = readProperties file: 'test.properties'
-		JMETER_OPTS = " -Jhostname="<< props.hostname << " -Jhostport=" << props.port << " -JsampleVar=" << params.sample
+		JMETER_OPTS = " -Jhostname=" + props.hostname + " -Jhostport=" + props.port + " -JsampleVar=" + params.sample
 		echo "### RUN OPTIONS : ${JMETER_OPTS}"
 	}
 	stages{
