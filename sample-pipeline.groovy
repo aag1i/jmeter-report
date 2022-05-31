@@ -6,11 +6,18 @@ pipeline
 	parameters
 	{
 		choice(name: 'SelectENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
-		string(name: 'My_VAR', defaultValue: 'sample', description: 'Sample Variable')
+		string(name: 'host', defaultValue: 'localhost', description: 'Input hostname or IP address')
+		string(name: 'sample', defaultValue: 'ABC', description: 'Sample Variable')
 	}
 	options
 	{
 		timestamps()
+	}
+	environment
+	{
+		def props = readProperties file: 'test.properties'
+		JMETER_OPTS = " -Jhostname="<< props.hostname << " -Jhostport=" << props.port << " -JsampleVar=" << params.sample
+		echo "### RUN OPTIONS : ${JMETER_OPTS}"
 	}
 	stages{
 	
@@ -32,7 +39,8 @@ pipeline
 										credentialsId: "github-auth-agl"
 								]
 						],
-						branches: [[name: "main"]]
+						branches: [[name: "main"]],
+						extensions: [[$class: 'CleanBeforeCheckout']]
 				], poll: false
 			}
 		}
@@ -54,13 +62,13 @@ pipeline
 		stage('Complete') {
 			steps {
 				script{
-					if (params.My_VAR != 'sample')
+					if (params.sample != 'ABC')
 					{
-						echo "### Sample variable changed -> ${params.My_VAR}"
+						echo "### Sample variable changed -> ${params.sample}"
 					}
 					else
 					{
-						echo "### Sample variable has not changed -> ${params.My_VAR}"
+						echo "### Sample variable has not changed -> ${params.sample}"
 					}
 				}
 			}
