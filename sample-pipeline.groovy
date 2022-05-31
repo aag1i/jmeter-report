@@ -34,19 +34,24 @@ pipeline
 			}
 		}
 		stage('Running Tests') {
-			dir("${WORKSPACE}") {
-				sh "/jenkins/tools/apache-jmeter-5.4.3/bin/jmeter.sh -n -t sample.jmx -l report.xml -p user.properties"
-			}
+			steps{
+				dir("${WORKSPACE}") {
+					sh "/jenkins/tools/apache-jmeter-5.4.3/bin/jmeter.sh -n -t sample.jmx -l report.xml -p user.properties"
+				}
+			}			
 		}
 		stage('Preparing Report') {
-			dir("${WORKSPACE}") {
-				sh "xsltproc report.xml sample.xslt > report.html"
-				archiveArtifacts artifacts: 'report.html'
+			steps{
+				dir("${WORKSPACE}") {
+					sh "xsltproc report.xml sample.xslt > report.html"
+					archiveArtifacts artifacts: 'report.html'
+				}
 			}
 		}
 		stage('Complete') {
+			steps {
 			echo "Test completed..."
+			}
 		}
-	}
-
-}
+	} //stages
+} //pipeline
