@@ -6,7 +6,6 @@ pipeline
 	parameters
 	{
 		choice(name: 'SelectENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
-		string(name: 'host', defaultValue: 'localhost', description: 'Input hostname or IP address')
 		string(name: 'sample', defaultValue: 'ABC', description: 'Sample Variable')
 	}
 	options
@@ -17,7 +16,7 @@ pipeline
 	{
 		def props = readProperties file: 'test.properties'
 		JMETER_OPTS = " -Jhostname=" + props.hostname + " -Jhostport=" + props.port + " -JsampleVar=" + params.sample
-		echo "### RUN OPTIONS : ${JMETER_OPTS}"
+		echo " RUN OPTIONS : " + ${JMETER_OPTS}
 	}
 	stages{
 	
