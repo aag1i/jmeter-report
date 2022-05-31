@@ -5,7 +5,7 @@ pipeline
 	
 	parameters
 	{
-		choice(name: 'global.ENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
+		choice(name: 'selectedENV', choices: ['DEV','UAT'], description: 'Pick the Environment')
 	}
 	
 	stages{
@@ -14,7 +14,7 @@ pipeline
 			steps{
 				echo "###################################"
 				echo "Test automation project starting..."
-				echo "Environment : ${params.global.ENV}"
+				echo "Environment : ${params.selectedENV}"
 			}			
 		}
 		
