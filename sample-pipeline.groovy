@@ -14,22 +14,20 @@ pipeline
 	}
 	environment
 	{
-		JMETER_OPTS = ""
-		script
-		{		
-		def props = readProperties file: 'test.properties'
-		JMETER_OPTS = " -Jhostname=$props.hostname -Jhostport=$props.port -JsampleVar=$params.sample"
-		echo " RUN OPTIONS : " + ${JMETER_OPTS}
-		
-		}
+		JMETER_OPTS = ""		
 	}
 	stages{
 	
 		stage('Initialising') {
-			steps{
-				echo "###################################"
-				echo "Test automation project starting..."
-				echo "Environment : ${params.SelectENV}"
+			steps{			
+				script
+				{		
+					def props = readProperties file: 'test.properties'
+					JMETER_OPTS = " -Jhostname=$props.hostname -Jhostport=$props.port -JsampleVar=$params.sample"
+					echo "###################################\nTest automation project starting..."
+					echo "Environment : ${params.SelectENV}"
+									
+				}				
 			}			
 		}		
 		stage('GitSCM') {
@@ -51,7 +49,8 @@ pipeline
 		stage('Running Tests') {
 			steps{
 				dir("${WORKSPACE}") {
-					sh "/jenkins/tools/apache-jmeter-5.4.3/bin/jmeter.sh -n -t sample.jmx -l report.xml -p sample.properties"
+					echo "RUN OPTIONS : ${JMETER_OPTS}"	
+					sh "/jenkins/tools/apache-jmeter-5.4.3/bin/jmeter.sh -n -t sample.jmx -l report.xml -p sample.properties ${JMETER_OPTS}"
 				}
 			}			
 		}
