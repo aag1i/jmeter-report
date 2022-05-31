@@ -11,21 +11,27 @@ pipeline
 		agent any
 		
 		stage('Initialising') {
-			echo "###################################"
-			echo "Test automation project starting..."
-			echo "Environment : ${params.global.ENV}"
+			steps{
+				echo "###################################"
+				echo "Test automation project starting..."
+				echo "Environment : ${params.global.ENV}"
+			}			
 		}
+		
 		stage('GitSCM') {
-			checkout scm: [
-					$class: 'GitSCM',
-					userRemoteConfigs: [
-							[
-									url: "https://github.com/aag1i/jmeter-report.git",
-									credentialsId: "github-auth-agl"
-							]
-					],
-					branches: [[name: "main"]]
-			], poll: false
+			
+			steps{
+				checkout scm: [
+						$class: 'GitSCM',
+						userRemoteConfigs: [
+								[
+										url: "https://github.com/aag1i/jmeter-report.git",
+										credentialsId: "github-auth-agl"
+								]
+						],
+						branches: [[name: "main"]]
+				], poll: false
+			}
 		}
 		stage('Running Tests') {
 			dir("${WORKSPACE}") {
